@@ -1,0 +1,59 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Game of Life - P5</title>
+  <link rel="stylesheet" href="libraries/bootstrap.min.css">
+  <link rel="stylesheet" href="game.css">
+</head>
+
+<body>
+  <h2>Game of Life</h2>
+  <table id='board'></table>
+
+  <div id='control_panel'>
+    <button id='step_btn' class='btn btn-success'>Step</button>
+    <button id='play_btn' class='btn btn-primary'>Play</button>
+    <button id='reset_btn' class='btn btn-warning'>Reset Random</button>
+    <button id='clear_btn' class='btn btn-info'>Clear</button>
+  </div>
+
+  <br><br>
+	<div class='row'>
+		<div class='col-md-6'>
+			<div class='paragraph'>
+				<p>
+					El juego de la vida es un autómata celular diseñado por el matemático británico John Horton Conway en 1970.
+					Hizo su primera aparición pública en el número de octubre de 1970 de la revista Scientific American, 
+					en la columna de juegos matemáticos de Martin Gardner. 
+					Desde un punto de vista teórico, es interesante porque es equivalente a una máquina universal de Turing, 
+					es decir, todo lo que se puede computar algorítmicamente se puede computar en el juego de la vida.
+				</p>
+			</div>
+		</div>
+		
+		<div class='col-md-6'>
+			<div class='paragraph'>
+				<p>
+					Se trata de un juego de cero jugadores, lo que quiere decir que su evolución está determinada 
+					por el estado inicial y no necesita ninguna entrada de datos posterior. 
+					Todas las células se actualizan simultáneamente en cada turno, siguiendo estas reglas:
+					<ul>
+						<li>Una célula muerta con exactamente 3 células vecinas vivas "nace" (es decir, al turno siguiente estará viva).</li>
+						<li>Una célula viva con 2 o 3 células vecinas vivas sigue viva, en otro caso muere (por "soledad" o "superpoblación").</li>
+					</ul>
+				</p>
+			</div>
+		</div>
+	</div>
+  <footer class="footer">
+    <div class="container">
+      <p class="text-muted">Construido por <a href='https://www.linkedin.com/in/javier-andres-cardozo/'>Javier Cardozo</a> en <a href="http://www.plataforma5.la/">Plataforma 5</a></p>
+    </div>
+  </footer>
+
+  <script src="game.js"></script>
+
+</body>
+</html>
